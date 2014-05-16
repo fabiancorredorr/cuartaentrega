@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Proyecto{% endblock %}
+
+{% block content %}
+<section class= "grid_12">
+	<form action="" method="post">
+		<h2><legend> </legend></h2>
+		<fieldset>
+			<legend>
+				<h2>Datos Generales:</h2>
+			</legend>
+			<ul>
+				<li>
+					<labelfor="nombre">Nombre Proyecto: </label>
+					<input type="text" id="nombre" required>
+				</li>
+				<li>
+					<labelfor="nombre">Encargado Proyecto: </label>
+					<input type="text" id="nombre" required>
+				</li>
+     			<li>
+        			<label for="fecha-inicio">Fecha de Inicio</label>
+        			<input type="date" id="fecha-inicio"/>
+       			</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>
+				<h2>Agregar Tarea:</h2>
+			</legend>
+			<ul>
+				<li>
+					<labelfor="nombre">Nombre Tarea: </label>
+					<input type="text" id="nombre" required>
+				</li>
+				<li>
+					<labelfor="nombre">Encargado Tarea: </label>
+					<input type="text" id="nombre" required>
+				</li>
+     			<li>
+        			<label for="fecha-inicio">Fecha de Inicio</label>
+        			<input type="date" id="fecha-inicio"/>
+       			</li>
+			</ul>
+		</fieldset>
+		<input type="submit" value="Ingresar">
+		<input type="reset" value="Borrar">
+	</form>
+</section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% if latest_poll_list %}
+    <ul>
+    	este es el index
+    {% for poll in latest_poll_list %}
+        <!--<li><a href="/appencuesta/{{ poll.id }}/">{{ poll.question_text }}</a></li>-->
+        <!--<li><a href="{% url 'detail' poll.id %}">{{ poll.question_text }}</a></li>-->
+        <li><a href="{% url 'appencuesta:detail' poll.id %}">{{ poll.question }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

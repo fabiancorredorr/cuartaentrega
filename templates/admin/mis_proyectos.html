@@ -1,0 +1,11 @@
+{% if lista_proyectos %}
+    <ul>
+    {% for proyecto in lista_proyectos %}
+        <!--<li><a href="/appencuesta/{{ poll.id }}/">{{ poll.question_text }}</a></li>-->
+        <!--<li><a href="{% url 'detail' poll.id %}">{{ poll.question_text }}</a></li>-->
+        <li><a href="{% url 'appencuesta:detail' proyecto.id %}">{{ proyecto.question }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

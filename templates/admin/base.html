@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/grid.css"/>
+    <link rel="stylesheet" href="css/site.css"/>
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+ <div class="container_12 clearfix">
+    <section class="nav-container clearfix">
+      <nav class="grid_7">
+        <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Ingresar</a></li>
+         <li><a href="#">Proyectos</a></li>
+        </ul>
+      </nav>
+      <div class="grid_5">
+        <form class="search">
+          <input type="search" placeholder="Search"/>
+          <input type="submit" value="Search"/>
+          <img src="images/lupa.png"/>
+        </form>
+     </div>
+    </section>
+    {% block content %}{% endblock %}
+    {% block footer %}
+    <hr>
+    <p>Thanks for visiting my site.</p>
+    {% endblock %}
+  </div>
+  </body>
+</html>

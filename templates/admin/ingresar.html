@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Ingresar{% endblock %}
+
+{% block content %}
+<section class= "push_2 grid_10">
+	<form action="" method="post">
+		<h2><legend>Registro</legend></h2>
+		<fieldset>
+			<legend>
+				<h2>Ingrese sus datos: </h2>
+			</legend>
+			<ul>
+				<li>
+					<labelfor="nombre">Nombres: </label>
+					<input type="text" id="nombre" required>
+				</li>
+				<li>
+					<labelfor="nombre">Apellidos: </label>
+					<input type="text" id="nombre" required>
+				</li>
+				<li>
+       				<label for="email">Email</label>
+       				<input type="email" id="email"  required/>
+     			</li>
+     			<li>
+       				<label for="pass">Clave</label>
+       				<input type="password" id="pass"  required/>
+     			</li>
+			</ul>
+		</fieldset>
+		<input type="submit" value="Registrarce">
+		<input type="reset" value="Borrar">
+	</form>
+</section>
+
+<section class= "push_2 grid_10">
+	<form action="" method="post">
+		<h2><legend> </legend></h2>
+		<fieldset>
+			<legend>
+				<h2>Inicio sesion:</h2>
+			</legend>
+			<ul>
+				<li>
+					<labelfor="nombre">Nombre: </label>
+					<input type="text" id="nombre" required>
+				</li>
+     			<li>
+       				<label for="pass">Clave</label>
+       				<input type="password" id="pass"  required/>
+     			</li>
+			</ul>
+		</fieldset>
+		<input type="submit" value="Ingresar">
+		<input type="reset" value="Borrar">
+	</form>
+</section>
+{% endblock %}
